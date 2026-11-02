@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+
+/* ========== CTA Section #6292CF ========== */
+.footerCta {
+  background: #6292CF; 
+  border-radius: 20px 20px 0 0;
+  padding: 40px 60px;
+  z-index: 3;
+  width: 90%;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  left: auto;
+  margin-top: 100px;
+  margin: auto;
+}
+
+
+
+.footer {
+  width: 100%;
+  background: #05162C;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+}
+.ctaContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+  color: #fff;
+}
+
+.ctaText h2 { 
+  font-size: 40px; 
+  font-weight: 800; 
+  margin-bottom: 16px; 
+  line-height: 1.2;
+}
+.ctaText p { 
+  font-size: 15px; 
+  line-height: 1.7; 
+  max-width: 500px; 
+  margin-bottom: 30px; 
+  opacity: 0.95; 
+  font-weight: 400;
+}
+
+.ctaButtons { display: flex; gap: 16px; }
+
+.storeBtn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #0D2547;
+  padding: 8px 16px;
+  border-radius: 8px;
+  width: 183px;
+  height: 55px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+.storeBtn:hover { transform: translateY(-2px); }
+.storeBtn span { font-size: 10px; opacity: 0.8; display: block; line-height: 1; font-weight: 400; }
+.storeBtn p { font-size: 16px; font-weight: 600; margin: 0; line-height: 1.2; }
+
+.ctaImage img { width: 400px; height: auto; }
+
+/* ========== Main Footer ========== */
+.footerMain { padding: 50px 5% 20px; }
+.footerContainer { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 50px; margin-bottom: 50px; }
+
+.footerLogo { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+.logoImg { width: 32px; height: 32px; object-fit: contain; } 
+.logoText { font-size: 24px; font-weight: 700; }
+
+.footerDesc { font-size: 14px; line-height: 1.7; color: #A0B4D0; margin-bottom: 24px; max-width: 280px; font-weight: 400; }
+
+.socialIcons { display: flex; gap: 12px; }
+.socialBox { width: 40px; height: 40px; background: #FFFFFF; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #05162C; transition: 0.3s; }
+.socialBox:hover { background: #6292CF; color: #FFFFFF; }
+
+.footerCol h4 { font-size: 18px; font-weight: 500; margin-bottom: 20px; }
+.footerCol ul { list-style: none; padding: 0; }
+.footerCol ul li { margin-bottom: 14px; }
+.footerCol ul li a { color: #A0B4D0; text-decoration: none; font-size: 14px; font-weight: 400; transition: 0.3s; }
+.footerCol ul li a:hover { color: #FFFFFF; }
+
+.contactList li { display: flex; gap: 12px; margin-bottom: 16px; align-items: flex-start; }
+.contactList li svg { color: #6292CF; margin-top: 3px; }
+.contactList li span { font-size: 12px; color: #7A8CA5; }
+.contactList li p { font-size: 14px; margin: 2px 0 0; font-weight: 500; }
+
+.footerBottom { max-width: 1200px; margin: 0 auto; padding-top: 30px; border-top: 1px solid #0D2547; display: flex; justify-content: space-between; font-size: 14px; color: #7A8CA5; font-weight: 400; }
+
+/* Responsive */
+@media (max-width: 1240px) { .footerCta { margin: 0 20px -80px; max-width: 100%; } }
+@media (max-width: 1024px) { 
+  .ctaContent { flex-direction: column; height: auto; text-align: center; } 
+  .footerCta { height: auto; padding: 50px 40px; } 
+  .footerContainer { grid-template-columns: 1fr 1fr; } 
+}
+@media (max-width: 700px) { 
+  .footerCta { padding: 30px 20px; } 
+  .ctaButtons { flex-direction: column; align-items: center; }
+  .footerContainer { grid-template-columns: 1fr; } 
+  .footerBottom { flex-direction: column; gap: 12px; text-align: center; }
+}
+.socialIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+}
+
+.socialIcon svg {
+  transition: transform 0.35s ease;
+}
+
+.socialIcon:hover {
+  transform: translateY(-6px) scale(1.08);
+  box-shadow: 0 14px 30px rgba(20, 93, 184, 0.2);
+}
+
+.socialIcon:hover svg {
+  transform: scale(1.15);
+}

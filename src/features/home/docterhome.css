@@ -1,0 +1,83 @@
+.topDoctors {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  padding: 90px 5%;
+  box-sizing: border-box;
+}
+
+.topDoctors__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.sectionTag { display: inline-block; color: #4f46e5; font-size: 15px; font-weight: 600; margin-bottom: 12px; }
+.topDoctors__header h2 { font-size: 48px; font-weight: 700; line-height: 1.2;  margin-bottom: 18px; }
+.topDoctors__header p { max-width: 470px; font-size: 17px; line-height: 1.7; color: #7b7b7b; }
+
+.viewAllBtn {
+  display: flex; align-items: center; gap: 8px; padding: 14px 26px;
+  border: 1.5px solid #e5e7eb; border-radius: 12px; background:#fff; color:#e5e7eb;
+  font-size: 16px; font-weight: 600; cursor: pointer; transition: .3s;
+}
+.viewAllBtn:hover { background: #1d4ed8; }
+
+/* Slider */
+.doctorGrid {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 15px;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+}
+.doctorGrid::-webkit-scrollbar { display: none; }
+
+/* Card */
+.doctorCard {
+  min-width: 367px; 
+  width: 367px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,.06);
+  border: 1px solid #f1f5f9;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  transition: .3s;
+}
+.doctorCard:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,.1); }
+
+.cardTop { display: flex; gap: 14px; margin-bottom: 16px; }
+.doctorImage {
+  width: 72px; height: 72px; border-radius: 14px; overflow: hidden; flex-shrink: 0;
+  background: #f8fafc;
+}
+.doctorImage img { width: 100%; height: 100%; object-fit: cover; }
+
+.doctorDetails h3 { font-size: 18px; font-weight: 700; color: #1e293b; margin: 0 0 4px 0; }
+.doctorDetails .specialty { font-size: 13px; color: #64748b; display: block; margin-bottom: 8px; }
+
+.doctorMeta { display: flex; gap: 14px; align-items: center; }
+.rating, .time { display: flex; align-items: center; gap: 5px; font-size: 13px; color: #475569; font-weight: 600; }
+
+.priceRow {
+  display: flex; justify-content: space-between; align-items: center;
+  padding-top: 14px; margin-bottom: 14px; border-top: 1px solid #f1f5f9;
+}
+.priceRow span { color: #94a3b8; font-size: 13px; }
+.priceRow h4 { color: #ef4444; font-size: 20px; font-weight: 700; }
+
+.bookBtn {
+  width: 100%; height: 46px; border: none; border-radius: 12px;
+  background: #2563eb; color: #fff; font-size: 15px; font-weight: 600; cursor: pointer; transition: .3s;
+}
+.bookBtn:hover { background: #1d4ed8; }
+
+/* Responsive */
+@media (max-width:1246px){ .doctorCard{ min-width: 340px; width: 340px; } .topDoctors__header h2{ font-size:42px; } }
+@media (max-width:700px){ .topDoctors{ padding:70px 30px; } .doctorCard{ min-width: 320px; width: 320px; } .topDoctors__header{ flex-direction:column; align-items:flex-start; } }
+@media (max-width:600px){ .topDoctors{ padding:60px 20px; } .doctorCard{ min-width: 300px; width: 300px; } .topDoctors__header h2{ font-size:34px; } }
+@media (max-width:367px){ .doctorCard{ min-width: 90%; width: 90%; } .topDoctors{ padding:50px 16px; } }

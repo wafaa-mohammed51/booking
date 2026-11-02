@@ -1,0 +1,14 @@
+{
+    "common": {
+        "welcome": "Welcome",
+        "loading": "Loading..."
+    },
+    "auth": {
+        "login": "Login",
+        "logout": "Logout"
+    },
+    "dashboard": {
+        "title": "Dashboard",
+        "users": "Users"
+    }
+}

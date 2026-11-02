@@ -1,0 +1,193 @@
+
+.location-section {
+  width: 100%;
+  padding: 30px 5%;
+}
+
+.location-container {
+  max-width: 1900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* ================= Left ================= */
+
+.location-left {
+}
+
+.location-left h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  left: -30%;
+
+}
+
+.location-left p {
+  width: 451px;
+  max-width: 100%;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #7a7a7a;
+  margin-bottom: 30px;
+}
+
+.location-search {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 12px;
+  background: #fff;
+    border: 1px solid #3b82f6;
+
+}
+
+.location-search svg {
+  color: #5f6b7a;
+}
+
+.location-search input {
+  outline: none;
+  font-size: 20px;
+  background: transparent;
+  width: 190px;
+}
+
+.location-search input::placeholder {
+  color: #7a7a7a;
+}
+
+/* ================= Right ================= */
+
+.location-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.map-image {
+  display:flex;
+  justify-content: end;
+  align-items: end;
+  width: 77%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 80px;
+  margin-right:0 ;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= Doctor Pin ================= */
+
+.doctor-pin {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #20193d;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.doctor-pin:hover {
+  transform: rotate(-45deg) scale(1.08);
+}
+
+.doctor-pin img {
+  width: 60px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  transform: rotate(45deg);
+}
+
+
+.pin-one {
+  top: 30%;
+  left: 22%;
+}
+
+.pin-two {
+  top: 18%;
+  right: 14%;
+}
+
+.pin-three {
+  bottom: 18%;
+  right: 8%;
+}
+
+/* ================= Responsive ================= */
+
+@media (max-width: 992px) {
+  .location-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .location-left h2 {
+    font-size: 40px;
+  }
+
+  .location-left p {
+    width: 100%;
+  }
+
+  .location-right {
+    width: 100%;
+  }
+
+  .map-image {
+    height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .location-section {
+    padding: 60px 20px;
+  }
+
+  .location-left h2 {
+    font-size: 34px;
+  }
+
+  .location-left p {
+    font-size: 16px;
+  }
+
+  .location-search {
+    width: 100%;
+  }
+
+  .location-search input {
+    width: 100%;
+  }
+
+  .map-image {
+    height: 350px;
+  }
+
+  .doctor-pin {
+    width: 42px;
+    height: 50px;
+  }
+
+  .doctor-pin img {
+    width: 34px;
+    height: 34px;
+  }
+}

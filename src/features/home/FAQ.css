@@ -1,0 +1,113 @@
+.faqSection {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 5%;
+}
+
+.faqHeader {
+  text-align: center;
+  margin-bottom: 50px;
+  white-space: nowrap; 
+}
+
+.faqBadge {
+  display: inline-block;
+  background: #eef2ff;
+  color: #3b82f6;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.faqTitle {
+  font-size: 44px;
+  font-weight: 500;
+  font-family: "Georgia", serif;
+  line-height: 1.2;
+  white-space: nowrap; 
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+}
+
+.faqItem {
+  background: #f8fafc; 
+  border-radius: 8px;
+  border: 2px solid #e2e8f0; 
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faqItem:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.faqQuestion {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #334155;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faqQuestion svg {
+  color: #64748b;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.faqItem.active .faqQuestion svg {
+  color: #2563eb;
+  transform: rotate(180deg);
+}
+
+.faqAnswer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.faqItem.active .faqAnswer {
+  max-height: 300px;
+  padding: 0 24px 18px 24px;
+}
+
+.faqAnswer p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #64748b;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 1024px) {
+  .faqTitle { font-size: 36px; white-space: normal; } 
+  .faqSection { padding: 80px 4%; }
+}
+
+@media (max-width: 700px) {
+  .faqSection { padding: 60px 20px; }
+  .faqTitle { font-size: 28px; }
+  .faqQuestion { font-size: 15px; padding: 16px 18px; }
+  .faqItem.active .faqAnswer { padding: 0 18px 16px 18px; }
+}
+
+@media (max-width: 480px) {
+  .faqTitle { font-size: 24px; }
+}
